@@ -8,7 +8,7 @@ Scaffold the project folder structure and produce the API setup guide for the ch
 |--------|--------------|---------------|-----|
 | Previous stage | `../01-concept/output/concept-brief.md` | Full file | Platform and template choices drive scaffold |
 | Reference | `references/node-setup.md` | Full file | Tech stack and build tool options |
-| Reference | `references/os-templates.md` | "{{OS_TEMPLATE}}" section | Template layout for the chosen OS style |
+| Reference | `references/os-templates.md` | "Windows 98" section | Template layout for the chosen OS style |
 | Shared | `../../shared/platform-specs.md` | Full file | API auth and endpoint reference |
 
 ## Process

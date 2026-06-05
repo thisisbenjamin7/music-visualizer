@@ -6,7 +6,7 @@ Code structure rules and shared constants for Stage 03. All code in output/app/ 
 
 All colors, fonts, and timing values must be defined in `src/constants.js` and imported where needed. No hardcoded values in other files.
 
-Derive hex values from the color scheme in the concept brief: {{COLOR_SCHEME}}
+Derive hex values from the color scheme in the concept brief: Blue and Orange
 
 ```js
 // src/constants.js -- populate from concept-brief.md color scheme

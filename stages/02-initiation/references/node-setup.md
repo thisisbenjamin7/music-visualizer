@@ -13,16 +13,16 @@ Prerequisites for stages 02 and 03. Install before starting initiation.
 
 **Default (simplest):** Vite + vanilla JavaScript + Web Audio API
 - Zero framework overhead
-- Fast to scaffold: `npm create vite@latest {{APP_NAME}} -- --template vanilla`
+- Fast to scaffold: `npm create vite@latest vizz -- --template vanilla`
 
 **Alternative:** Vite + React
 - Use if the user wants component-based UI for the OS window chrome
-- Scaffold: `npm create vite@latest {{APP_NAME}} -- --template react`
+- Scaffold: `npm create vite@latest vizz -- --template react`
 
 ## Project Folder Pattern
 
 ```
-{{APP_NAME}}/
+vizz/
 ├── index.html
 ├── src/
 │   ├── main.js          (entry point)

@@ -1,0 +1,214 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #008080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  font-size: 12px;
+}
+
+.desktop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main window */
+.window {
+  width: 700px;
+  height: 520px;
+  background: #c0c0c0;
+  display: flex;
+  flex-direction: column;
+  /* Win98 raised border: white/light top-left, dark bottom-right, black outer */
+  border: 2px solid;
+  border-color: #dfdfdf #808080 #808080 #dfdfdf;
+  box-shadow: 1px 1px 0 0 #000000, -1px -1px 0 0 #000000;
+}
+
+/* Title bar */
+.title-bar {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 4px 3px 6px;
+  height: 22px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.title-bar-text {
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.title-bar-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.tb-btn {
+  width: 16px;
+  height: 14px;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  font-size: 9px;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  padding: 0;
+  line-height: 1;
+}
+
+.tb-btn:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+}
+
+/* Menu bar */
+.menu-bar {
+  background: #c0c0c0;
+  display: flex;
+  padding: 1px 2px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #808080;
+  position: relative;
+  user-select: none;
+}
+
+.menu-item {
+  padding: 3px 8px;
+  cursor: default;
+  position: relative;
+}
+
+.menu-item:hover,
+.menu-item.open {
+  background: #000080;
+  color: #ffffff;
+}
+
+/* Dropdown */
+.menu-dropdown {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #dfdfdf #808080 #808080 #dfdfdf;
+  box-shadow: 2px 2px 0 0 #000000;
+  z-index: 100;
+  min-width: 160px;
+}
+
+.menu-dropdown.hidden {
+  display: none;
+}
+
+.menu-option {
+  padding: 4px 20px 4px 28px;
+  cursor: default;
+  white-space: nowrap;
+  position: relative;
+}
+
+.menu-option:hover {
+  background: #000080;
+  color: #ffffff;
+}
+
+.menu-option.active::before {
+  content: '✓';
+  position: absolute;
+  left: 8px;
+}
+
+/* Window body (canvas container) */
+.window-body {
+  flex: 1;
+  background: #000000;
+  border: 2px solid;
+  border-color: #808080 #dfdfdf #dfdfdf #808080;
+  margin: 4px;
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+}
+
+#visualizer-canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Login overlay */
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 42, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.win98-btn {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  padding: 6px 22px;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  color: #000000;
+  letter-spacing: 0.02em;
+}
+
+.win98-btn:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+  padding: 7px 21px 5px 23px;
+}
+
+/* Status bar */
+.status-bar {
+  display: flex;
+  gap: 2px;
+  padding: 2px 4px;
+  flex-shrink: 0;
+  background: #c0c0c0;
+}
+
+.status-segment {
+  border: 1px solid;
+  border-color: #808080 #dfdfdf #dfdfdf #808080;
+  padding: 1px 6px;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#status-track {
+  flex: 1;
+  min-width: 0;
+}
+
+#status-mode {
+  width: 140px;
+  flex-shrink: 0;
+}

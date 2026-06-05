@@ -2,7 +2,7 @@
 
 Deployment steps for Stage 05. Follow the section for your chosen hosting target.
 
-## Target Domain: {{DOMAIN}}
+## Target Domain: myvisualizer.com
 
 ---
 
@@ -52,7 +52,7 @@ Deployment steps for Stage 05. Follow the section for your chosen hosting target
 
 ## Post-Deploy Checklist
 
-- [ ] App loads at {{DOMAIN}}
+- [ ] App loads at myvisualizer.com
 - [ ] Music platform OAuth redirect URI updated to include the live domain
 - [ ] API keys are NOT visible in browser dev tools network tab
 - [ ] Tested on mobile viewport (optional but recommended for general public)

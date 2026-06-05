@@ -2,7 +2,7 @@
 
 Layout patterns for OS-themed UI. Used in stages 02 and 03.
 
-## Selected Template: {{OS_TEMPLATE}}
+## Selected Template: Windows 98
 
 ---
 

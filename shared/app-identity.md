@@ -4,7 +4,7 @@ Core identity for the music visualizer app. Referenced by stages 01 and 05.
 
 ## App Details
 
-- **Name:** {{APP_NAME}}
+- **Name:** vizz
 - **Target audience:** General public
-- **Deployment domain:** {{DOMAIN}}
-- **Music platform:** {{MUSIC_PLATFORM}}
+- **Deployment domain:** myvisualizer.com
+- **Music platform:** Spotify

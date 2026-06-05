@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vizz</title>
+  <link rel="stylesheet" href="assets/os-theme/win98.css" />
+</head>
+<body>
+  <div class="desktop">
+    <div class="window" id="main-window">
+
+      <div class="title-bar">
+        <div class="title-bar-text">vizz</div>
+        <div class="title-bar-controls">
+          <button class="tb-btn">_</button>
+          <button class="tb-btn">&#9633;</button>
+          <button class="tb-btn tb-close">&#10005;</button>
+        </div>
+      </div>
+
+      <div class="menu-bar">
+        <div class="menu-item" id="view-menu-trigger">View</div>
+        <div class="menu-dropdown hidden" id="view-menu">
+          <div class="menu-option active" data-mode="bars">Bar Spectrum</div>
+          <div class="menu-option" data-mode="waveform">Waveform</div>
+          <div class="menu-option" data-mode="particles">Particle Field</div>
+          <div class="menu-option" data-mode="circular">Circular Spectrum</div>
+        </div>
+      </div>
+
+      <div class="window-body">
+        <canvas id="visualizer-canvas"></canvas>
+        <div id="login-overlay" class="login-overlay">
+          <button id="login-btn" class="win98-btn">Connect Spotify</button>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <div class="status-segment" id="status-track">Not connected</div>
+        <div class="status-segment" id="status-mode">Bar Spectrum</div>
+      </div>
+
+    </div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
